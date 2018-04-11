@@ -2,3 +2,7 @@ azure_app
 .idea
 target
 *.iml
+/build
+/.idea
+/.gradle
+local.properties
