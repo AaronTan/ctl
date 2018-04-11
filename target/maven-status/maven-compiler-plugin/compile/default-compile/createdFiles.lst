@@ -1,0 +1,6 @@
+com\tanlin\controller\ParentController.class
+com\tanlin\domain\Parent.class
+com\tanlin\controller\indexController.class
+com\tanlin\CtlApplication.class
+com\tanlin\service\ParentService.class
+com\tanlin\repository\ParentRepository.class
