@@ -6,3 +6,4 @@ target
 /.idea
 /.gradle
 local.properties
+src/main/resources/application-azure.yml

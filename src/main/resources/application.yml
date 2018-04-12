@@ -6,7 +6,7 @@ spring:
   jpa:
     hibernate:
 #      dialect: org.hibernate.dialect.MySQL5Dialect
-      ddl-auto: update
+      ddl-auto: none
       show-sql: true
 server:
   port: 80
@@ -18,11 +18,3 @@ spring:
     url: jdbc:mysql://192.168.137.101:3306/ctlinfo
     username: root
     password: 123456
----
-#Azure
-spring:
-  profiles: azure
-  datasource:
-    url: jdbc:mysql://ctlmysql01.mysqldb.chinacloudapi.cn:3306/ctlinfo
-    username: ctlmysql01%tanlin
-    password: Foundersc@0230
