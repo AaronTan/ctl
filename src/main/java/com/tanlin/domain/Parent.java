@@ -17,7 +17,7 @@ public class Parent {
     @Id
     @GeneratedValue
     private int id;
-    @Column
+//    @Column
     private String name;
     private String relation;
 

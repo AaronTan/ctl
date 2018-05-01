@@ -1,20 +1,37 @@
+#显示调试日志
+debug: false
 spring:
   profiles:
+#废弃    active: azure
+#    active: azurewin
     active: local
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
   jpa:
     hibernate:
 #      dialect: org.hibernate.dialect.MySQL5Dialect
-      ddl-auto: none
+      ddl-auto: update
       show-sql: true
 server:
-  port: 80
+  port: 81
+logging:
+  level:
+    com:
+      tanlin: debug
+#在当前项目根目录的sblog文件夹下生成日志文件，不能与loggin.file共用
+  #path: sblogs
+#在当前项目根目录的spring.log文件中记录日志，不能与logging.path共用
+  #file: spring.log
+  #pattern:
+#控制台日志输出的格式
+    #console: "%d{yyyy‐MM‐dd} [%thread] %-5level %logger{50} ‐ %msg%n"
+#文件日志输出的格式
+    #file: "%d{yyyy‐MM‐dd} [%thread] %-5level %logger{50} ‐ %msg%n"
 ---
 #本地
 spring:
   profiles: local
   datasource:
-    url: jdbc:mysql://192.168.137.101:3306/ctlinfo
+    url: jdbc:mysql://192.168.137.101:3306/ctlinfo  
     username: root
     password: 123456

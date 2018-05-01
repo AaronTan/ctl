@@ -30,5 +30,11 @@ public class ParentService {
         return parentRepository.findAll();
     }
 
+    public Parent save(Parent parent){
+        return parentRepository.save(parent);
+    }
 
+    public void delOne(Integer parentId){
+        parentRepository.deleteById(parentId);
+    }
 }
